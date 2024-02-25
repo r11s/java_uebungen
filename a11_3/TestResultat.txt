@@ -1,0 +1,24 @@
+
+Test initial Deutsch <-------------
+Frühling
+Sommer
+Herbst
+Winter
+
+Test Französisch <-------------
+printemps
+été
+automne
+hiver
+
+Test Englisch <-------------
+spring
+summer
+autumn
+winter
+
+Test Deutsch <-------------
+Frühling
+Sommer
+Herbst
+Winter
