@@ -27,5 +27,13 @@ public class App {
         System.out.println(Season.SOMMER);
         System.out.println(Season.HERBST);
         System.out.println(Season.WINTER);
+
+        System.out.println("\nTest Italienisch <-------------");
+        Season.setSprache(Languages.ITALIENISCH);
+        System.out.println(Season.FRUEHLING);
+        System.out.println(Season.SOMMER);
+        System.out.println(Season.HERBST);
+        System.out.println(Season.WINTER);
+
     }
 }

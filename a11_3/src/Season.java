@@ -10,7 +10,8 @@ enum Season {
   static String[][] translations = {
       { "Frühling", "Sommer", "Herbst", "Winter" },
       { "printemps", "été", "automne", "hiver" },
-      { "spring", "summer", "autumn", "winter" }
+      { "spring", "summer", "autumn", "winter" },
+      { "primavera", "estate", "autunno", "inverno" }
   };
 
   private int season;

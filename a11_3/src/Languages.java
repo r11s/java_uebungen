@@ -1,5 +1,5 @@
 public enum Languages {
-  DEUTSCH(0), ENGLISCH(2), FRANZOESISCH(1);
+  DEUTSCH(0), ENGLISCH(2), FRANZOESISCH(1), ITALIENISCH(3);
 
   private int code = 0;
 
