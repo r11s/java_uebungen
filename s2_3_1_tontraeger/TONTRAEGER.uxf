@@ -1,0 +1,40 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>420</x><y>50</y><w>150</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+Typ
+--
+CD
+LP
+MP3
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>60</y><w>210</w><h>250</h></coordinates><panel_attributes>Album
+bg=orange
+--
+- albumTitel: String
+- band: Band
+- stuecke: Stueck[]
+- isLive: boolean
+- typ: Typ
+- jahr: int
+--
++ Album( albumTitel: String,
+                 band: Band,
+                 stuecke: Stueck[],
+                 isLive: boolean,
+                 typ: Typ,
+                 jahr: int
+               )
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>90</y><w>190</w><h>40</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>180</y><w>210</w><h>110</h></coordinates><panel_attributes>Stueck
+--
+- titel: String
+- laenge: int
+--
++ Stueck(titel: String, laenge: int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>330</y><w>210</w><h>80</h></coordinates><panel_attributes>Band
+--
+- musiker: Musiker</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>420</y><w>210</w><h>140</h></coordinates><panel_attributes>Musiker
+--
+- vorname: String
+- nachnme: String
+- geburtsdatum: LocalDate
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>570</y><w>210</w><h>30</h></coordinates><panel_attributes>Tontraeger</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>160</y><w>190</w><h>230</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;10;170;210</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>140</y><w>190</w><h>120</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;10;170;100</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>380</y><w>190</w><h>110</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>170;10;10;90</additional_attributes></element></diagram>
