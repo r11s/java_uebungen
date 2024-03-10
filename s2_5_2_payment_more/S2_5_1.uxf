@@ -1,0 +1,58 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>160</x><y>90</y><w>210</w><h>250</h></coordinates><panel_attributes>Payment
+--
+– timeRegistered : int
+– timeFulfilled : int 
+– amount : float 
+– isFulfilled : boolean
+--
++ Payment(
+	timeStamp: int,
+	amount: float
+)
++ pay(timeStamp : int : void
++ toString() : String 
++ getRegisterTime() : int
++ isFulfilled() : boolean
++ getAmount() : float
++ toString(). String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>420</x><y>20</y><w>280</w><h>210</h></coordinates><panel_attributes>Zahlungsdatum (time...) hat das Format
+jjjjmmtt (Jahr, Monat, Tag)
+
+isFulfilled speichert den Status
+der Zahlung (false | true)
+
+toString() Format:
+"Amount=1450.0 / payment pending"
+(Zahlung noch nicht ausgeführt)
+
+"Amount=1450.0 / payment done @ 20121130"
+(Zahlung wurde ausgeführt)
+bg=pink
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>90</y><w>80</w><h>80</h></coordinates><panel_attributes>lt=..</panel_attributes><additional_attributes>60;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>490</y><w>200</w><h>110</h></coordinates><panel_attributes>CashPayment
+--
+- bankNr : String
+--
++ CashPayment(bankNr: String)
++ getBankNr() : String
++ toString() : String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>390</y><w>240</w><h>150</h></coordinates><panel_attributes>CreditCardPayment
+--
+- cardNr: String
+- securityCode: int
+- endDate: int
+--
++ CreditCardPayment(cardNr: String)
++ setEndDate(timestamp: int): void
++ setSecurityCode(code: int): void
++ toString(). String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>330</y><w>80</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>330</y><w>230</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;210;60</additional_attributes></element><element><id>UMLNote</id><coordinates><x>50</x><y>730</y><w>410</w><h>70</h></coordinates><panel_attributes>toString() Format:
+
+Cash: Amount=1000.0 / payment done @ 20121124 / bank= 12345678
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>590</y><w>90</w><h>160</h></coordinates><panel_attributes>lt=..</panel_attributes><additional_attributes>10;140;70;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>350</x><y>590</y><w>570</w><h>100</h></coordinates><panel_attributes>toString() Format:
+CreditCard: Amount=2000.0 / payment pending / cardNr=5555566666222211111 / expires@1611
+
+endDate-Format:
+jjjjmmtt
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>530</y><w>120</w><h>80</h></coordinates><panel_attributes>lt=..</panel_attributes><additional_attributes>10;10;100;60</additional_attributes></element></diagram>

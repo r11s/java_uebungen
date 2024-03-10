@@ -13,3 +13,4 @@
 - Die Gruppe von Musikern, welche das Album eingespielt hat, wird mit einer eigenen Klasse `Band` realisiert. Deren einzelne Mitglieder stammen aus der Klasse `Musiker`, welche persönliche Informationen, wie Name oder Geburtsdatum enthalten wird.
 
 - Die einzelnen Stücke werden mit einer eigenen Klasse `Stueck` gespeichert. Dort finden sich Informationen wie der Titel und die Länge des Stücks.
+

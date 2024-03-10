@@ -1,0 +1,31 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>100</x><y>80</y><w>210</w><h>290</h></coordinates><panel_attributes>Payment
+--
+– timeRegistered : int
+– timeFulfilled : int 
+– amount : float 
+– isFulfilled : boolean
+--
++ Payment(
+	timeStamp: int,
+	amount: float
+)
++ pay(timeStamp : int : void
++ toString() : String 
++ getRegisterTime() : int
++ isFulfilled() : boolean
++ getAmount() : float</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>60</x><y>440</y><w>280</w><h>210</h></coordinates><panel_attributes>Zahlungsdatum (time...) hat das Format
+jjjjmmtt (Jahr, Monat, Tag)
+
+isFulfilled speichert den Status
+der Zahlung (false | true)
+
+toString(): format
+"Amount=1450.0 / payment pending"
+(Zahlung noch nicht ausgeführt)
+
+"Amount=1450.0 / payment done @ 20121130"
+(Zahlung wurde ausgeführt)
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>110</x><y>360</y><w>70</w><h>100</h></coordinates><panel_attributes>lt=..</panel_attributes><additional_attributes>10;80;50;10</additional_attributes></element></diagram>

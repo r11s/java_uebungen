@@ -4,7 +4,7 @@ Typ
 CD
 LP
 MP3
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>60</y><w>210</w><h>250</h></coordinates><panel_attributes>Album
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>60</y><w>210</w><h>250</h></coordinates><panel_attributes>Album
 bg=orange
 --
 - albumTitel: String
@@ -21,8 +21,8 @@ bg=orange
                  typ: Typ,
                  jahr: int
                )
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>90</y><w>190</w><h>40</h></coordinates><panel_attributes>lt=.&gt;
-</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>180</y><w>210</w><h>110</h></coordinates><panel_attributes>Stueck
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>90</y><w>180</w><h>40</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;20;160;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>180</y><w>210</w><h>110</h></coordinates><panel_attributes>Stueck
 --
 - titel: String
 - laenge: int
@@ -34,7 +34,7 @@ bg=orange
 - vorname: String
 - nachnme: String
 - geburtsdatum: LocalDate
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>570</y><w>210</w><h>30</h></coordinates><panel_attributes>Tontraeger</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>160</y><w>190</w><h>230</h></coordinates><panel_attributes>lt=.&gt;
-</panel_attributes><additional_attributes>10;10;170;210</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>140</y><w>190</w><h>120</h></coordinates><panel_attributes>lt=.&gt;
-</panel_attributes><additional_attributes>10;10;170;100</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>380</y><w>190</w><h>110</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>570</y><w>210</w><h>30</h></coordinates><panel_attributes>Tontraeger</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>160</y><w>180</w><h>230</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;10;160;210</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>140</y><w>180</w><h>120</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;10;160;100</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>380</y><w>190</w><h>110</h></coordinates><panel_attributes>lt=.&gt;
 </panel_attributes><additional_attributes>170;10;10;90</additional_attributes></element></diagram>

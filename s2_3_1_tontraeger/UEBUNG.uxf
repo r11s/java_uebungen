@@ -1,0 +1,23 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>90</x><y>140</y><w>210</w><h>120</h></coordinates><panel_attributes>Album
+--
+- albumTitle : String
+- stueck[] : Stueck
+- typ: Typ
+- jahr: int
+--
++ Album(title: String, ...)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>80</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+Typ
+--
+CD
+LP
+MP3</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>110</y><w>270</w><h>100</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;80;250;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>350</y><w>210</w><h>120</h></coordinates><panel_attributes>Stueck
+--
+- title: String
+- laenge: int
+--
++ Stueck(title: String, ...)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>680</x><y>290</y><w>120</w><h>40</h></coordinates><panel_attributes>Länge in Sekunden
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>320</y><w>60</w><h>90</h></coordinates><panel_attributes>lt=..</panel_attributes><additional_attributes>10;70;40;10</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>200</y><w>230</w><h>220</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;10;210;200</additional_attributes></element></diagram>
