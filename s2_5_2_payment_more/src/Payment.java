@@ -1,9 +1,14 @@
+import java.time.LocalDate;
+
 public class Payment {
 
   private int timeFullfilled;
   private float amount;
   private boolean isFullfilled;
   private int timeRegistered;
+
+  protected Payment() {
+  }
 
   Payment(int timeStamp, float amount) {
     this.isFullfilled = false;
@@ -34,11 +39,19 @@ public class Payment {
       fullfilled = "pending";
     }
 
-    String s = String.format(
+    String paymentString = String.format(
         "Amount = %.1f / payment %s",
         amount,
         fullfilled);
-    return s;
+    return paymentString;
   }
 
+  protected void setTimestamp() {
+    LocalDate date = LocalDate.now();
+    String dateString = date.toString();
+    dateString = dateString.replace("-", "");
+    int dateInt = Integer.parseInt(dateString);
+
+    this.timeRegistered = dateInt;
+  }
 }
