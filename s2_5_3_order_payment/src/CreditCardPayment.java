@@ -28,6 +28,7 @@ public class CreditCardPayment extends Payment {
   public String toString() {
     return super.toString() + " / cardNr=" + this.cardNr + " / expires@" + endDate;
   }
+
 }
 
 // creditcard: Amount=2000.0 / payment pending / cardNr=5555-5666-6622-2211 /

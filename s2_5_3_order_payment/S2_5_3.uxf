@@ -50,12 +50,24 @@ bg=pink
 + setSecurityCode(code: int): void
 + getSecurityCode(code: int): int
 + toString(). String
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>310</y><w>80</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>310</y><w>230</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;210;50</additional_attributes></element><element><id>UMLNote</id><coordinates><x>50</x><y>710</y><w>410</w><h>70</h></coordinates><panel_attributes>toString() Format:
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>310</y><w>80</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>310</y><w>230</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;210;50</additional_attributes></element><element><id>UMLNote</id><coordinates><x>80</x><y>710</y><w>410</w><h>70</h></coordinates><panel_attributes>toString() Format:
 
 Cash: Amount=1000.0 / payment done @ 20121124 / bank= 12345678
-bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>570</y><w>90</w><h>160</h></coordinates><panel_attributes>lt=..</panel_attributes><additional_attributes>10;140;70;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>350</x><y>570</y><w>570</w><h>100</h></coordinates><panel_attributes>toString() Format:
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>570</y><w>60</w><h>160</h></coordinates><panel_attributes>lt=..</panel_attributes><additional_attributes>10;140;40;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>350</x><y>570</y><w>570</w><h>100</h></coordinates><panel_attributes>toString() Format:
 CreditCard: Amount=2000.0 / payment pending / cardNr=5555566666222211111 / expires@1611
 
 endDate-Format:
 jjjjmmtt
-bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>510</y><w>120</w><h>80</h></coordinates><panel_attributes>lt=..</panel_attributes><additional_attributes>10;10;100;60</additional_attributes></element></diagram>
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>510</y><w>120</w><h>80</h></coordinates><panel_attributes>lt=..</panel_attributes><additional_attributes>10;10;100;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>820</y><w>260</w><h>200</h></coordinates><panel_attributes>Order
+-
+- anzahl: int (Zahlungspositionen)
+- payment: Payment
+- counter: int;
+- nr: int
+-
++ Order(anzahl: int)
++ addPayment(Payment p) : void
++ addPayment(CashPayment p) : void
++ addPayment(CredCardPayment p) : void
++ getPayment(int nr) : Payment
++ listPayments() : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>20</x><y>180</y><w>330</w><h>760</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>140;10;10;10;10;740;310;740</additional_attributes></element></diagram>
