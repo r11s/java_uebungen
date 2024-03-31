@@ -32,5 +32,8 @@ public class Main {
             System.out.println("\n- - - - - - - - - - -\n");
         }
 
+        figuren[0].zeichne(); // Kreis zeichnen
+        figuren[1].zeichne(); // Rechteck zeichnen
+
     }
 }
