@@ -105,7 +105,9 @@ public class Main {
 
         for (int i = start; i < start + length; i++) {
 
-            int b = ba[i] & 0xff; // convert byte in unsigned byte
+            // int b = ba[i] < 0 ? 256 - ba[i] : ba[i]
+            // int b = ba[i] & 0xff; // convert byte in unsigned byte
+            int b = Byte.toUnsignedInt(ba[i]);
 
             int r = b % 16;
             int l = b / 16;
