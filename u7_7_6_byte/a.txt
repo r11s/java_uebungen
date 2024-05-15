@@ -1,0 +1,30 @@
+
+          Chunk ID: RIFF
+        Chunk Size: 5252452
+            Format: WAVE
+    Sub Chunk 1 ID: fmt
+  Sub Chunk 1 Size: 16
+      Audio Format: 1
+          Channels: 2
+       Sample Rate: 44100
+         Byte Rate: 176400
+       Block Align: 2
+   Bits per Sample: 16
+     Data Chunk ID: data
+    Sub Chunk 2 ID: 5252408
+
+
+          Chunk ID: RIFF
+        Chunk Size: 5252452
+            Format: WAVE
+    Sub Chunk 1 ID: fmt
+  Sub Chunk 1 Size: 16
+      Audio Format: 1
+          Channels: 2
+       Sample Rate: 44100
+         Byte Rate: 176400
+       Block Align: 2
+   Bits per Sample: 16
+     Data Chunk ID: data
+    Sub Chunk 2 ID: 5252408
+
