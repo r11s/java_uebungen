@@ -7,4 +7,6 @@
 !*.pdf
 !*.svg
 !*.wav
+!*.fxml
+!*.drawio
 !*/
