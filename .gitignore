@@ -9,4 +9,5 @@
 !*.wav
 !*.fxml
 !*.drawio
+!*.json
 !*/
