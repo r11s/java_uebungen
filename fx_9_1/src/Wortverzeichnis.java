@@ -16,18 +16,35 @@ public class Wortverzeichnis extends Application {
     public void start(Stage stage) {
 
         // Elemente in der VBox links
-        TextField txtEingabe = new TextField("Dummy Eingabe");
+        TextField txtEingabe = new TextField("");
+        txtEingabe.setMaxWidth(Double.MAX_VALUE);
+        txtEingabe.setMinWidth(Double.MIN_VALUE);
 
         Button btnAdd = new Button("Wort hinzufügen");
+        btnAdd.setMaxWidth(Double.MAX_VALUE);
+        btnAdd.setMinWidth(Double.MIN_VALUE);
 
         btnAdd.setOnAction(e -> System.out.println(e));
 
         Button btnSearch = new Button("Wort suchen");
-        Button btnViewAll = new Button("Alle anzeigen");
+        btnSearch.setMaxWidth(Double.MAX_VALUE);
+        btnSearch.setMinWidth(Double.MIN_VALUE);
 
-        Label lblCount = new Label("Dummy Label");
+        Button btnViewAll = new Button("Alle anzeigen");
+        btnViewAll.setMaxWidth(Double.MAX_VALUE);
+        btnViewAll.setMinWidth(Double.MIN_VALUE);
+
+        Label lblCount = new Label("(0)");
 
         VBox vBoxLinks = new VBox();
+
+        vBoxLinks.setAlignment(Pos.CENTER);
+        vBoxLinks.setSpacing(20);
+
+        vBoxLinks.setPadding(new Insets(5));
+
+        vBoxLinks.setPadding(new Insets(40, 0, 40, 0));
+
         vBoxLinks.getChildren().addAll(
                 txtEingabe,
                 btnAdd,
@@ -39,12 +56,17 @@ public class Wortverzeichnis extends Application {
 
         // Elemente in der HBox
         HBox root = new HBox();
+
+        root.setFillHeight(false);
+        root.setSpacing(24);
+        root.setPadding(new Insets(20));
+
         root.getChildren().add(vBoxLinks);
         root.getChildren().add(lsvWorte);
 
         Scene scene = new Scene(root);
 
-        stage.setTitle("Aufgabe 9.1");
+        stage.setTitle("Aufgabe 9.1 ohne SceneBuilder");
         stage.setScene(scene);
         stage.show();
     }
