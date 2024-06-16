@@ -1,0 +1,12 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "FX_41",
+      "request": "launch",
+      "mainClass": "FX_41",
+      "projectName": "fx_4_1_222f2d45",
+      "vmArgs": "--module-path /Users/rainer/javafx-sdk-21.0.3/lib --add-modules javafx.controls,javafx.fxml"
+    }
+  ]
+}

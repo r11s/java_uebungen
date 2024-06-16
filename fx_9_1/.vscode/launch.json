@@ -1,0 +1,12 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Wortverzeichnis",
+      "request": "launch",
+      "mainClass": "Wortverzeichnis",
+      "projectName": "fx_9_1_222f400a",
+      "vmArgs": "--module-path /Users/rainer/javafx-sdk-21.0.3/lib --add-modules javafx.controls,javafx.fxml"
+    }
+  ]
+}

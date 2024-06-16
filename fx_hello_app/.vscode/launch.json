@@ -1,0 +1,12 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "HelloApp",
+      "request": "launch",
+      "mainClass": "HelloApp",
+      "projectName": "fx_hello_app_ba38e453",
+      "vmArgs": "--module-path /Users/rainer/javafx-sdk-21.0.3/lib --add-modules javafx.controls,javafx.fxml"
+    }
+  ]
+}
