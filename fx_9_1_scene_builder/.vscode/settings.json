@@ -1,5 +1,7 @@
 {
-    "java.project.sourcePaths": ["src"],
+    "java.project.sourcePaths": [
+        "src"
+    ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
@@ -10,6 +12,7 @@
         "/Users/rainer/javafx-sdk-21.0.3/lib/javafx.graphics.jar",
         "/Users/rainer/javafx-sdk-21.0.3/lib/javafx.media.jar",
         "/Users/rainer/javafx-sdk-21.0.3/lib/javafx.swing.jar",
-        "/Users/rainer/javafx-sdk-21.0.3/lib/javafx.web.jar"
+        "/Users/rainer/javafx-sdk-21.0.3/lib/javafx.web.jar",
+        "/Users/rainer/javafx-sdk-21.0.3/lib/**/*.jar"
     ]
 }
