@@ -33,8 +33,8 @@ public class View {
 
     private Label lblStatus = new Label("Status:");
 
-    // only in coded GUI
-    public View() {
+    public View(Presenter presenter) {
+        this.presenter = presenter;
         initialize();
     }
 
@@ -94,9 +94,6 @@ public class View {
         HBox.setMargin(lblStatus, new Insets(0, 0, 0, 10));
         pane.add(hbxStatus, 0, 3, 2, 1);
 
-        presenter = new Presenter(this);
-        presenter.choose();
-
         btnCheck.setOnAction(e -> actionHandler(e));
         btnNext.setOnAction(e -> presenter.choose());
     }
@@ -129,7 +126,6 @@ public class View {
         lblStatus.setTextFill(Color.RED);
     }
 
-    // only in coded GUI
     public Parent getRoot() {
         return pane;
     }

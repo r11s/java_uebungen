@@ -1,8 +1,6 @@
-package lernkarten;
+package wuerfel;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -15,14 +13,13 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        Parent root = FXMLLoader.load(getClass().getResource("View.fxml"));
-        Scene scene = new Scene(root);
-        stage.setTitle("Vokabel-Trainer");
+        View view = new View();
+
+        Scene scene = new Scene(view.getRoot());
+
+        stage.setTitle("Zwei Würfel");
         stage.setScene(scene);
         stage.show();
-
-        Model model = new Model();
-        model.fillVocabulary();
 
     }
 

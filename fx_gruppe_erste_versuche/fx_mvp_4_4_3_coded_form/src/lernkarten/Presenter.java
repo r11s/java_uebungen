@@ -4,12 +4,13 @@ public class Presenter {
 
   private Model model;
   private View view;
-
   public int tries;
 
-  public Presenter(View view) {
+  public Presenter(Model model) {
+    this.model = model;
+  }
 
-    this.model = new Model();
+  public void addView(View view) {
     this.view = view;
   }
 

@@ -7,10 +7,8 @@ public class Presenter {
 
   public int tries;
 
-  public Presenter(View view) {
-
+  public Presenter() {
     this.model = new Model();
-    this.view = view;
   }
 
   public void choose() {
@@ -35,6 +33,10 @@ public class Presenter {
       view.showNotOkMessage();
     }
 
+  }
+
+  public void addView(View view) {
+    this.view = view;
   }
 
 }

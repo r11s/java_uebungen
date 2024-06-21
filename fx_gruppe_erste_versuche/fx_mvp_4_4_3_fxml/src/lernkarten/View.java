@@ -27,7 +27,8 @@ public class View {
     private Button btnNext;
 
     public void initialize() {
-        presenter = new Presenter(this);
+        presenter = new Presenter();
+        presenter.addView(this);
         presenter.choose();
 
         btnCheck.setOnAction(e -> actionHandler(e));
