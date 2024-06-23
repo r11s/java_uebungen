@@ -2,9 +2,6 @@ package aufgabe9;
 
 import java.util.ArrayList;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-
 public class Model {
 
   private ArrayList<String> wordList = new ArrayList<>();
@@ -14,12 +11,26 @@ public class Model {
 
   }
 
-  public ArrayList<String> getWordList() {
-    return wordList;
+  public String getWordList() {
+    StringBuilder sb = new StringBuilder();
+    for (String w : wordList) {
+      sb.append(w + '\n');
+    }
+
+    return sb.toString();
   }
 
-  public ObservableList<String> getItems() {
-    return FXCollections.observableArrayList(this.wordList);
+  public String searchWordList(String word) {
+
+    String answer = "Wort wurd nicht gefunden !!!";
+
+    for (String w : wordList) {
+      if (w.equals(word)) {
+        answer = w;
+      }
+    }
+
+    return answer;
   }
 
 }

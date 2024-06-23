@@ -1,12 +1,10 @@
 package aufgabe9;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 public class Controller {
@@ -29,11 +27,10 @@ public class Controller {
   private TextField txfInput;
 
   @FXML
-  private ListView<String> lvWordList;
+  private TextArea txtWordList;
 
   public void initialize() {
     this.model = new Model();
-
   }
 
   @FXML
@@ -44,26 +41,23 @@ public class Controller {
     }
 
     model.addWord(value);
-    // System.out.println(model.getWordList());
+    txfInput.clear();
 
-    lvWordList.setItems(model.getItems());
+    txtWordList.setText(model.getWordList());
 
   }
 
   @FXML
   void searchWord(ActionEvent event) {
     String value = txfInput.getText().trim();
-    if (value.isEmpty()) {
-      return;
-    }
 
-    System.out.println(value);
+    txtWordList.setText(model.searchWordList(value));
 
   }
 
   @FXML
   void showAll(ActionEvent event) {
-    lvWordList.setItems(model.getItems());
+    txtWordList.setText(model.getWordList());
   }
 
 }
