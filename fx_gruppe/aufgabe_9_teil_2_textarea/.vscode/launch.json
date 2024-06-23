@@ -5,7 +5,7 @@
       "name": "Main",
       "request": "launch",
       "mainClass": "aufgabe9.Main",
-      "projectName": "aufgabe_9_teil_2_a4ba39f0",
+      "projectName": "aufgabe_9_teil_2_textarea_3528dca9",
       "vmArgs": "--module-path /Users/rainer/javafx-sdk-21.0.3/lib --add-modules javafx.controls,javafx.fxml"
     }
   ]

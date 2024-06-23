@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
 public class Controller {
@@ -27,10 +27,13 @@ public class Controller {
   private TextField txfInput;
 
   @FXML
-  private TextArea txtWordList;
+  private ListView<String> lvwWordList;
 
   public void initialize() {
     this.model = new Model();
+
+    lvwWordList.setItems(model.getWordList());
+    lblCount.setText(model.getWordCount());
   }
 
   @FXML
@@ -39,25 +42,25 @@ public class Controller {
     if (value.isEmpty()) {
       return;
     }
-
+    lvwWordList.setItems(model.getWordList());
     model.addWord(value);
+    lblCount.setText(model.getWordCount());
     txfInput.clear();
-
-    txtWordList.setText(model.getWordList());
-
+    lblCount.setText(model.getWordCount());
   }
 
   @FXML
   void searchWord(ActionEvent event) {
     String value = txfInput.getText().trim();
 
-    txtWordList.setText(model.searchWordList(value));
+    lvwWordList.setItems(model.getSearchList(value));
 
+    lblCount.setText(model.getGefundenCount());
   }
 
   @FXML
   void showAll(ActionEvent event) {
-    txtWordList.setText(model.getWordList());
+    lvwWordList.setItems(model.getWordList());
   }
 
 }

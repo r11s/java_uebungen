@@ -33,4 +33,8 @@ public class Model {
     return answer;
   }
 
+  public String getWordCount() {
+    return "(" + wordList.size() + " Wörter )";
+  }
+
 }
