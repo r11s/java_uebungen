@@ -5,7 +5,7 @@
       "name": "Main",
       "request": "launch",
       "mainClass": "wuerfel.Main",
-      "projectName": "fx_ein_wuerfel_d118040c",
+      "projectName": "fx_zwei_wuerfel_1773fe88",
       "vmArgs": "--module-path /Users/rainer/javafx-sdk-21.0.3/lib --add-modules javafx.controls,javafx.fxml"
     }
   ]

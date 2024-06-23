@@ -4,34 +4,27 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
 
-public class View {
+public class ControllerNoFXML {
 
-    private Presenter presenter;
+    Model model = new Model();
 
     private GridPane pane = new GridPane();
-    private Image[] dices;
 
     ImageView dice1;
     ImageView dice2;
 
     Button btnRollDices;
 
-    public View() {
-        presenter = new Presenter(this);
-        dices = new Image[7];
-
+    public ControllerNoFXML() {
         initialize();
     }
 
     public void initialize() {
-
-        this.fillDices();
 
         pane.setMinSize(300, 200);
         pane.setHgap(40);
@@ -44,8 +37,6 @@ public class View {
         dice1 = new ImageView();
         dice2 = new ImageView();
 
-        setDices(0, 0);
-
         pane.add(dice1, 0, 0);
         pane.add(dice2, 1, 0);
 
@@ -55,22 +46,23 @@ public class View {
         btnRollDices.setPrefSize(300, 100);
 
         btnRollDices.setFont(Font.font(24));
-        btnRollDices.setOnAction(a -> presenter.rollDices());
+        btnRollDices.setOnAction(a -> this.setDices());
 
         hBox.getChildren().add(btnRollDices);
         pane.add(hBox, 0, 2, 2, 2);
 
+        setDicesZero();
+
     }
 
-    private void fillDices() {
-        for (int i = 0; i < dices.length; i++) {
-            dices[i] = new Image("images/wuerfel_" + i + ".png");
-        }
+    public void setDicesZero() {
+        this.dice1.setImage(model.getDiceZero());
+        this.dice2.setImage(model.getDiceZero());
     }
 
-    public void setDices(int i, int j) {
-        this.dice1.setImage(dices[i]);
-        this.dice2.setImage(dices[j]);
+    public void setDices() {
+        this.dice1.setImage(model.rollDice());
+        this.dice2.setImage(model.rollDice());
     }
 
     public Parent getRoot() {

@@ -1,6 +1,8 @@
 package wuerfel;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -13,9 +15,10 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        View view = new View();
+        // Parent root = new Controller().getRoot();
+        Parent root = FXMLLoader.load(getClass().getResource("ui.fxml"));
 
-        Scene scene = new Scene(view.getRoot());
+        Scene scene = new Scene(root);
 
         stage.setTitle("Zwei Würfel");
         stage.setScene(scene);

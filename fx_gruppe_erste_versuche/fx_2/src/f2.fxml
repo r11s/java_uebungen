@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+
+
+<Label minHeight="-Infinity" prefHeight="250.0" style="-fx-text-fill: GREEN; -fx-background-radius: 12; -fx-background-color: YELLOW;" text="Willkommen zu JavaFX" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <font>
+      <Font name="Times New Roman Bold" size="64.0" />
+   </font>
+   <padding>
+      <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+   </padding>
+</Label>

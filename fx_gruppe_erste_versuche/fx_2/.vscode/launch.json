@@ -4,8 +4,8 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
-      "mainClass": "lernkarten.Main",
-      "projectName": "fx_mvp_4_4_3_coded_form_19584aea",
+      "mainClass": "Main",
+      "projectName": "fx_2_e9397119",
       "vmArgs": "--module-path /Users/rainer/javafx-sdk-21.0.3/lib --add-modules javafx.controls,javafx.fxml"
     }
   ]

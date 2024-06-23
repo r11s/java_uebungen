@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "calc.Main",
+      "projectName": "fx_calculator_b2cd0dfb",
+      "vmArgs": "--module-path /Users/rainer/javafx-sdk-21.0.3/lib --add-modules javafx.controls,javafx.fxml",
+      "noDebug": true,
+      "__progressId": "459623de-6cbc-4966-978a-23f284b17d3a",
+      "__origin": "internal"
+    }
+  ]
+}
