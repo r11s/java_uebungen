@@ -4,8 +4,8 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
-      "mainClass": "wuerfel.Main",
-      "projectName": "fx_zwei_wuerfel_87e9febe",
+      "mainClass": "aufgabe9.Main",
+      "projectName": "aufgabe_9_teil_2_a4ba39f0",
       "vmArgs": "--module-path /Users/rainer/javafx-sdk-21.0.3/lib --add-modules javafx.controls,javafx.fxml"
     }
   ]
