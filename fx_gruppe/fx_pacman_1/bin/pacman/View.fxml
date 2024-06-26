@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane prefHeight="640.0" prefWidth="490.0" style="-fx-background-color: LIGHTGREEN;" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pacman.Controller">
+   <children>
+      <VBox alignment="CENTER">
+         <children>
+            <Pane fx:id="maze" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onKeyPressed" onKeyReleased="#onKeyReleased" onKeyTyped="#onKeyTyped" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Arc fx:id="pacman" centerX="30.0" centerY="30.0" fill="#ffe81f" length="330.0" radiusX="30.0" radiusY="30.0" startAngle="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
+               </children>
+            </Pane>
+            <Button fx:id="btnPlay" mnemonicParsing="false" onAction="#onActionPlay" prefWidth="120.0" style="-fx-base: LAVENDER; -fx-text-fill: LIMEGREEN; -fx-background-radius: 10;" text="PLAY">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="18.0" top="42.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnStop" mnemonicParsing="false" onAction="#onActionStop" prefWidth="120.0" style="-fx-base: LAVENDER; -fx-text-fill: SALMON; -fx-background-radius: 12;" text="STOP">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Button>
+         </children>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </VBox>
+   </children>
+</StackPane>
